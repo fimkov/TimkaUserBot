@@ -96,7 +96,7 @@ async def lmodule(client, message):
             await message.edit(text_versions['error 2'][lang])
             return
 
-        f = open(f"plugins/{info[0]}", "w+")
+        f = open(f"plugins/{info[0]}", "w+", encoding='utf-8')
         f.write(info[1])
         f.close()
 
